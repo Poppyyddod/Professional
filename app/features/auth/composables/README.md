@@ -1,0 +1,1 @@
+- For `auth` reusable function script

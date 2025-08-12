@@ -1,0 +1,1 @@
+# root `components/` is reusable global components
