@@ -17,31 +17,18 @@
 
         <div class="col-span-8 pl-8 border-l border-gray-200">
           <div class="mb-6">
-            <div class="w-12 h-1 bg-green-500 rounded mb-4"></div>
+            <div class="w-12 h-1 bg-blue-500 rounded mb-4"></div>
             <h2 class="text-xl font-semibold text-gray-900 mb-3">
               {{ menuItems[selectedMenuItem]?.subtitle }}
               <span class="text-xs align-top ml-1">™</span>
             </h2>
-            <p class="text-gray-600 mb-4">
-              {{ menuItems[selectedMenuItem]?.description }}
-            </p>
-            <a href="#" class="inline-flex items-center text-green-600 hover:text-green-700 font-medium">
-              {{ menuItems[selectedMenuItem]?.ctaText }}
-              <ChevronRight class="w-4 h-4 ml-2" />
-            </a>
           </div>
 
           <div v-if="selectedMenuItem === 0">
             <div class="grid grid-cols-2 gap-6">
-              <div class="space-y-3">
-                <a v-for="category in talentCategories.left" :key="category" href="#"
-                  class="block text-gray-700 hover:text-green-600 font-medium">
-                  {{ category }}
-                </a>
-              </div>
-              <div class="space-y-3">
-                <a v-for="category in talentCategories.right" :key="category" href="#"
-                  class="block text-gray-700 hover:text-green-600 font-medium">
+              <div class="space-y-3"> 
+                <a v-for="category in talentCategories" :key="category" href="#"
+                  class="block text-gray-700 hover:bg-gray-300 font-medium p-2 rounded-lg ">
                   {{ category }}
                 </a>
               </div>
@@ -96,22 +83,18 @@ const menuItems = [
   }
 ]
 
-const talentCategories = {
-  left: [
-    "Development & IT",
-    "Design & Creative",
-    "Sales & Marketing",
-    "Writing & Translation",
-    "Admin & Customer Support"
-  ],
-  right: [
-    "Finance & Accounting",
-    "HR & Training",
-    "Legal",
-    "Engineering & Architecture",
-    "Hire freelancers"
-  ]
-}
+const talentCategories = [
+  "Development & IT",
+  "Design & Creative",
+  "Sales & Marketing",
+  "Writing & Translation",
+  "Admin & Customer Support",
+  "Finance & Accounting",
+  "HR & Training",
+  "Legal",
+  "Engineering & Architecture",
+  "Hire freelancers"
+]
 
 const projectCatalogItems = [
   { title: "Logo Design", imageBg: "bg-gradient-to-br from-pink-200 to-purple-200" },
