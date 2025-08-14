@@ -2,9 +2,10 @@
     <header class="shadow-md">
         <div class="p-6 flex items-center gap-10">
             <h1 class="text-xl font-bold">Professional</h1>
+
             <UiDropdown title="Find talent">
                 <template #hover-content>
-                    <Talentcontent />
+                    <LayoutTalentContent />
                 </template>
             </UiDropdown>
 
@@ -16,6 +17,7 @@
                     </div>
                 </template>
             </UiDropdown>
+
             <UiDropdown title="Why professional" />
 
             <h2>Enterprise</h2>
@@ -26,8 +28,6 @@
 
 <script setup lang="ts">
 import { ref } from 'vue'
-import { ChevronRight } from 'lucide-vue-next'
-import Talentcontent from './talent_content.vue'
 
 const selectedMenuItem = ref(0)
 
