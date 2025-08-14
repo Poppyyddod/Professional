@@ -1,4 +1,5 @@
 import type { Config } from 'tailwindcss'
+import colors from 'tailwindcss/colors'
 
 export default {
   content: [
@@ -11,7 +12,13 @@ export default {
     "./error.vue"
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        brand: {
+          'brand-blue': colors.blue[500],
+        }
+      }
+    },
   },
   plugins: [],
 } satisfies Config

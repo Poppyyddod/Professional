@@ -2,12 +2,12 @@
     <div>
         <div class="p-12 flex justify-between">
             <!-- Details -->
-            <div class="flex justify-evenly flex-col w-5/12 bg-gray-300">
+            <div class="flex justify-evenly flex-col w-5/12">
                 <h1 class="text-6xl font-bold">Post a job today, hire tomorrow</h1>
                 <p class="text-xl">
                     Connect with talent that gets you, and hire them to take your business to the next level.
                 </p>
-                <button class="bg-green-600 text-white px-4 py-2">Get Started</button>
+                <button class="text-white bg-brand-blue px-4 py-2">Get Started</button>
             </div>
 
             <!-- Image -->
